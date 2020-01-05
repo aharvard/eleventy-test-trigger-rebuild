@@ -1,0 +1,22 @@
+{
+  "name": "eleventy-test-trigger-rebuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass-chokidar ./styles -o ./_site --watch",
+    "11ty": "npx @11ty/eleventy --serve",
+    "start": "npm-run-all --parallel watch:sass 11ty"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0-beta.2",
+    "node-sass-chokidar": "^1.4.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
