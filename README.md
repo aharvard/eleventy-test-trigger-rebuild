@@ -1,7 +1,8 @@
 # Trigger 11ty Rebuild via Watch Target
 
-This repo shows how to trigger an 11ty rebuild when a file changes inside of a configured watch target:
+Watch for changes to files in `./styles/` and then trigger a rebuild.
 
+Config for `.elevnty.js`:
 ```js
 module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("./styles/");
